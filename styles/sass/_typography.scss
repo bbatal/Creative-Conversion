@@ -1,0 +1,46 @@
+/* Typography */
+html {
+    font-size: 125%;
+}
+
+@mixin myFont($fontFamily, $fontSize, $fontWeight, $letterSpacing, $lineHeight) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+}
+
+body {
+    @include myFont($baseFont, 0.7rem, normal, 0.3px, 24px);
+    text-transform: uppercase;
+    color: $black;
+}
+
+p {
+    text-transform: none;
+}
+
+h1 {
+    @include myFont($secondaryFont, 1.85rem, bold, 0.9px, inherit);
+}
+
+h2, h3, h4 {
+    @include myFont($secondaryFont, 0.9rem, normal, 1.8px, inherit);
+}
+
+.nav-links a {
+    font-family: $secondaryFont;
+}
+
+.contact li,
+.recent-posts li,
+.twitter-widget h4 {
+    text-transform: none;
+    font-size: inherit;
+}
+
+button {
+    @include myFont($secondaryFont, inherit, bold, 0.7px, inherit);
+    text-transform: inherit;
+}

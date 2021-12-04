@@ -1,0 +1,26 @@
+/* General Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// responsive image
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+// for content on large/small screens
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
