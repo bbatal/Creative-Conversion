@@ -628,3 +628,111 @@ header button {
   background: #FFFFFF;
   border: none;
 }
+
+/* footer begins */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7em 0 0 0;
+  background: #333333;
+}
+
+footer h3,
+footer h4 {
+  letter-spacing: 0.3px;
+}
+
+.social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.contact,
+.recent-posts,
+.twitter-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  margin-bottom: 3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+footer .button-input-styling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-input-styling input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+  border: none;
+  padding: 1em 0 1em 1em;
+  font-size: 0.8rem;
+}
+
+.button-input-styling input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.button-input-styling input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.button-input-styling input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.button-input-styling input::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.button-input-styling input::placeholder {
+  opacity: 0.5;
+}
+
+.button-input-styling button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 17%;
+          flex: 0 0 17%;
+  background-color: #C3DAB7;
+  border: none;
+}
+
+.banner {
+  text-align: center;
+  border-top: 1px solid #3f3f3f;
+  padding: 3em 0;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+}
