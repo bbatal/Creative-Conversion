@@ -6,11 +6,13 @@
 
 /* Header Styles */
 header {
-    min-height: 70vh;
+    min-height: 85vh;
     background-image: url('../../assets/home-1.jpeg');
     background-size: cover;
-    background-position: 51.5% 50%; 
+    background-position: 51% 50%; 
     padding: 20px 0;
+    max-width: 1360px;
+    margin: 0 auto;
 }
 
 header button {
@@ -20,10 +22,40 @@ header button {
     padding: 8px;
 }
 
+header {
+    i {
+        font-size: 1rem;
+    }
+
+    .fa-shopping-bag {
+        position: relative;
+    }
+
+    .fa-shopping-bag::after {
+        content: '2';
+        font-size: 0.5rem;
+        position: absolute;
+        right: -62%;
+        bottom: -62%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $lightSage;
+        // display properties
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 2px;
+    }
+}
+
 .header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -72,7 +104,7 @@ header button {
 .intro {
     display: flex;
     flex-direction: column;
-    padding: 10em 0 6em 0;
+    padding: 11em 0 7em 0;
     background-color: $lightSage;
     position: relative;
 }
@@ -187,8 +219,9 @@ header button {
 
 /* .team section begins */
 .team {
-    padding: 5em 0;
+    padding: 5em 0 11em 0;
     position: relative;
+    background: $white;
 }
 
 .team::before {
@@ -211,18 +244,27 @@ header button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 0.8em;
+    align-items: center;
+    gap: 2em;
 }
 
 .team-container li {
-    width: calc((100% / 2) - 0.8em);
-    margin-bottom: 0.8em;
+    width: calc((100% / 2) - 1em);
 }
 
 .team-container .team-players {
     width: 100%;
     background-color: $whiteTwo;
     padding: 4em 1.5em 2em 1.5em;
+    margin: 0 auto 0 0;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.players-wrapper {
+    max-width: 531px;
 }
 
 .team-players h3 {
@@ -233,6 +275,7 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /* .portfolio section begins */
@@ -321,3 +364,10 @@ footer .button-input-styling {
     letter-spacing: 5px;
     font-family: $secondaryFont;
 }
+
+/* welcome to media query land */
+@import "620px-media-query";
+@import "800px-media-query";
+@import "900px-media-query";
+@import "930px-media-query";
+@import "1120px-media-query";

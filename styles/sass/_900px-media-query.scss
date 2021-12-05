@@ -1,0 +1,18 @@
+@media (min-width: 900px) {
+    .team-container {
+        .team-players {
+            width: calc(((2 / 3) * 100%) - 0.7em);
+            margin: 0;
+            }
+
+        .centered-text {
+            padding: 0 0.5em;
+            }
+        
+        .players-wrapper {
+            max-width: 700px;
+        }
+
+    } 
+
+}
