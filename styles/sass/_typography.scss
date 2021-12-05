@@ -3,18 +3,18 @@ html {
     font-size: 125%;
 }
 
-@mixin myFont($fontFamily, $fontSize, $fontWeight, $letterSpacing, $lineHeight) {
+@mixin myFont($fontFamily, $fontSize, $fontWeight, $letterSpacing, $lineHeight, $fontColor) {
     font-family: $fontFamily;
     font-size: $fontSize;
     font-weight: $fontWeight;
     letter-spacing: $letterSpacing;
     line-height: $lineHeight;
+    color: $fontColor;
 }
 
 body {
-    @include myFont($baseFont, 0.7rem, normal, 0.3px, 24px);
+    @include myFont($baseFont, 0.7rem, normal, 0.3px, 24px, $black);
     text-transform: uppercase;
-    color: $black;
 }
 
 p {
@@ -22,15 +22,21 @@ p {
 }
 
 h1 {
-    @include myFont($secondaryFont, 1.85rem, bold, 0.9px, inherit);
+    @include myFont($secondaryFont, 1.85rem, bold, 0.9px, inherit, inherit);
 }
 
-h2, h3, h4 {
-    @include myFont($secondaryFont, 0.9rem, normal, 1.8px, inherit);
+h2, 
+h3, 
+h4 {
+    @include myFont($secondaryFont, 0.9rem, normal, 1.8px, inherit, inherit);
 }
 
 .nav-links a {
     font-family: $secondaryFont;
+}
+
+footer {
+    color: $white;
 }
 
 .contact li,
@@ -41,6 +47,12 @@ h2, h3, h4 {
 }
 
 button {
-    @include myFont($secondaryFont, inherit, bold, 0.7px, inherit);
+    @include myFont($secondaryFont, inherit, bold, 0.7px, inherit, inherit);
+    text-transform: inherit;
+    color: $black;
+}
+
+.banner p {
     text-transform: inherit;
 }
+

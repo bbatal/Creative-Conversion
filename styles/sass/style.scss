@@ -4,3 +4,254 @@
 @import "typography";
 @import "general-styles";
 
+/* Header Styles */
+header {
+    min-height: 70vh;
+    background-image: url('../../assets/home-1.jpeg');
+    background-size: cover;
+    background-position: 51.5% 50%; 
+    padding: 20px 0;
+}
+
+header button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 5px;
+    font-size: clamp(0.5rem, 1rem + 3vw ,1.85rem);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.mobile {
+    display: none;
+}
+
+.header-nav .hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.bar {
+    display: block;
+    width: 37px;
+    height: 3px;
+    margin: 6px auto;
+    border-radius: 5px;
+    background-color: $black;
+}
+
+/* Main begins */
+/* .intro section begins */
+.intro::before {
+    content: '';
+    position: absolute;
+    top: -7%;
+    left: calc(100% / 2);
+    width: 1px;
+    height: 7em;
+    border-radius: 10px;
+    background-color: rgb(140, 140, 140);
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10em 0 6em 0;
+    background-color: $lightSage;
+    position: relative;
+}
+
+.intro-img-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 370.8px;
+    width: 65vw;
+}
+
+.absolute-container {
+    position: absolute;
+    top: -35%;
+    left: -20%;
+    width: 40%;
+}
+
+.intro-text {
+    text-align: center;
+    max-width: 356px;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+.intro-text h2 {
+    margin-bottom: 0.8em;
+}
+
+/* .gallery section */
+.gallery {
+    padding: 7.5em 0;
+}
+.left-arrow,
+.right-arrow {
+    display: none;
+}
+
+.gallery img {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.gallery-text {
+    text-align: center;
+    padding: 2em 0 0 0;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.dots-menu {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.dots-menu > .dot:first-child {
+    background-color: black;
+    border: 3px solid black;
+}
+
+.dots-menu .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid grey;
+    background-color: white;
+    margin: auto 0;
+}
+
+/* .products section begins */
+.products {
+    background: url(../../assets/home-4.jpeg);
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 5em 0;
+}
+
+.product {
+    display: flex;
+    align-items: flex-start;
+    max-width: 450px;
+    gap: 2em;
+    margin: 5em auto;
+}
+
+.product i {
+    font-size: 2em;
+}
+
+.border {
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $black;
+    border-radius: 50%;
+    margin-left: 2em;
+}
+
+.descriptor h2 {
+    margin-bottom: 0.8em;
+}
+
+.descriptor p {
+    padding: 0 1em 0 0;
+}
+
+/* .team section begins */
+.team {
+    padding: 5em 0;
+    position: relative;
+}
+
+.team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(100% / 2);
+    width: 1px;
+    height: 5em;
+    border-radius: 10px;
+    background-color: rgb(142, 142, 142);
+}
+
+.team h2 {
+    margin: 2em 0 5em 0;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.8em;
+}
+
+.team-container li {
+    width: calc((100% / 2) - 0.8em);
+    margin-bottom: 0.8em;
+}
+
+.team-container .team-players {
+    width: 100%;
+    background-color: $whiteTwo;
+    padding: 4em 1.5em 2em 1.5em;
+}
+
+.team-players h3 {
+    margin-bottom: 1em;
+}
+
+.centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .portfolio section begins */
+.portfolio {
+    background: $lightSage;
+    padding: 10em 1em;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+}
+
+.portfolio-container button {
+    padding: 1.2em 2.5em;
+    background: $white;
+    border: none;
+}

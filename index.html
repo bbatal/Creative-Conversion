@@ -11,112 +11,154 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">home</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">portfolio</a></li>
-            </ul>
+        <div class="wrapper">
+            <nav class="header-nav">
+                <button class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links mobile">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">portfolio</a></li>
+                </ul>
 
-            <h1>creative</h1>
+                <h1 class="logo">creative</h1>
 
-            <ul class="nav-links">
-                <li><a href="#">shop</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#">
-                    <i class="fas fa-search"></i>
-                </a></li>
-                <li><a href="#">
-                    <i class="fas fa-shopping-bag"></i>
-                </a></li>
-            </ul>
-        </nav>
+                <ul class="nav-links">
+                    <li class="mobile"><a href="#">shop</a></li>
+                    <li class="mobile"><a href="#">contact</a></li>
+                    <li>
+                        <button>
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </li>
+                </ul>
+                
+            </nav>
+        </div> <!-- .wrapper ends -->
     </header> <!-- Header ends -->
 
     <!-- Main Begins -->
     <main>
         <section class="intro">
-            <div class="intro-img-container">
-                <img src="./assets/home-2.jpeg" alt="A white room with a wooden table and a desktop computer on it with a flower beside it and a calender on the wall">
-                <img class="img-overlay" src="./assets/home-circle-text.png" alt="Text reads, Branding and Website Pros">
-            </div>
+            <div class="wrapper">
+                <div class="intro-img-container">
+                    <img src="./assets/home-2.jpeg" alt="A white room with a wooden table and a desktop computer on it with a flower beside it and a calender on the wall">
 
-            <div>
-                <h2>branding</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, labore! Eos.</p>
-            </div>
+                    <div class="absolute-container">
+                        <img class="img-overlay" src="./assets/home-circle-text.png" alt="Text reads, Branding and Website Pros">
+                    </div>
+                </div>
 
-            <div>
-                <h2>Design & Develop</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, soluta numquam!</p>
-            </div>
+                <div class="intro-text">
+                    <h2>branding</h2>
+                    <p>Venture first mover advantage incubator metrics focus backing business-to-consumer.</p>
+                </div>
+
+                <div class="intro-text">
+                    <h2>Design & Develop</h2>
+                    <p>Venture first mover advantage incubator metrics focus backing business-to-consumer.</p>
+                </div>
+            </div> <!-- .wrapper ends -->
         </section> <!-- .intro section ends -->
 
-        <section class="gallery">
-            <div class="gallery-container">
-                <button class="left-arrow"><</button>
-                <img src="./assets/home-3.jpeg" alt="paper outline of website layout with text on left side and shirtless man on grey background on the right">
+        <div class="wrapper">
+            <section class="gallery">
+                <div class="gallery-container">
+                    <button class="left-arrow"><</button>
+                    <img src="./assets/home-3.jpeg" alt="paper outline of website layout with text on left side and shirtless man on grey background on the right">
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque commodi sapiente vel voluptatem praesentium doloribus consequuntur dolor cupiditate, debitis, accusantium sed sit non tempora nostrum, assumenda facere aperiam dolore minus dignissimos adipisci! Laudantium ex dolores doloremque illo! Reiciendis consectetur sint libero.</p>
-                <button class="left-arrow">></button>
-            </div>
-        </section> <!-- .gallery section ends -->
+                    <div class="dots-menu">
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                    </div>
+
+                    <p class="gallery-text">Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series</p>
+                    <button class="left-arrow">></button>
+                </div>
+            </section> <!-- .gallery section ends -->
+        </div> <!-- .wrapper ends -->
 
         <section class="products">
-            <div class="spacer"></div>
             <div class="products-container">
-                <div class="product1">
-                    <i class="fas fa-magic"></i>
+                <div class="product">
+                    <div class="border">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    
                     <div class="descriptor">
                         <h2>unique design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus provident minus velit a at.</p>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
                     </div>
                 </div>
-                <div class="product2">
-                    <i class=""></i>
+                <div class="product">
+                    <div class="border">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    
                     <div class="descriptor">
                         <h2>seo marketing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus provident minus velit a at.</p>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
                     </div>
                 </div>
-                <div class="product3">
-                    <i class="fas fa-desktop"></i>
+                <div class="product">
+                    <div class="border">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    
                     <div class="descriptor">
                         <h2>retina ready</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus provident minus velit a at.</p>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
                     </div>
                 </div>
-                <div class="product4">
-                    <i class="fas fa-shopping-bag"></i>
+                <div class="product">
+                    <div class="border">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    
                     <div class="descriptor">
                         <h2>ecommerce ready</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus provident minus velit a at.</p>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
                     </div>
                 </div>
-                <div class="product5">
-                    <i class="fas fa-sliders-h"></i>
+                <div class="product">
+                    <div class="border">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    
                     <div class="descriptor">
                         <h2>advanced options</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus provident minus velit a at.</p>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
                     </div>
                 </div>
-                <div class="product6">
-                    <i class="fas fa-smile"></i>
+                <div class="product">
+                    <div class="border">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    
                     <div class="descriptor">
                         <h2>customizable</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus provident minus velit a at.</p>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
                     </div>
                 </div>
             </div>
         </section> <!-- .products ends -->
 
         <section class="team">
+            <div class="wrapper">
             <h2>meet our team</h2>
-            <div class="team-container">
-                <ul>
-                    <li>
+                <ul class="team-container">
+                    <li class="team-players">
                         <h3>Team Players</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nostrum deleniti minima alias nihil, culpa iste consequatur exercitationem, aperiam nisi, sunt numquam.</p>
+                        <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
                     </li>
                     <li>
                         <img src="./assets/home-5.jpeg" alt="man in formal suit and orange tie profile on grey background looking into the camera">
@@ -133,22 +175,24 @@
                     <li>
                         <img src="./assets/home-9.jpeg" alt="woman's front profile looking into the camera, wearing glasses and having her hair in a bun, background blurred behind her">
                     </li>
-                    <li>
+                    <li class="centered-text">
                         <h4>want to work with us !</h4>
                     </li>
                 </ul>
-            </div>
+                </div> <!-- .wrapper ends -->
         </section> <!-- .team section ends -->
 
         <section class="portfolio">
+            <div class="wrapper">
             <div class="portfolio-container">
                 <h2>drop us a line</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium consequatur magnam minus molestias? Sequi iusto hic pariatur rem esse?</p>
+                <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface</p>
                 <button>view portfolio</button>
             </div>
-            <div class="img-container">
+            <!-- <div class="img-container">
                 <img src="./assets/home-10.jpeg" alt="white table with phone on it turned on, a folder with files strewing out, and a coffee cup with a black lid">
-            </div>
+            </div> -->
+            </div> <!-- .wrapper ends -->
         </section> <!-- .portfolio section ends -->
     </main> <!-- main ends -->
 
