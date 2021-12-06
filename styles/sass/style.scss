@@ -182,7 +182,6 @@ header {
     background: url(../../assets/home-4.jpeg);
     background-size: cover;
     background-position: 50% 50%;
-    padding: 5em 0;
 }
 
 .product {
@@ -194,13 +193,13 @@ header {
 }
 
 .product i {
-    font-size: 2em;
+    font-size: 1.1rem;
 }
 
 .border {
     flex-shrink: 0;
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,10 +210,12 @@ header {
 
 .descriptor h2 {
     margin-bottom: 0.8em;
+    font-size: 0.8rem;
 }
 
 .descriptor p {
     padding: 0 1em 0 0;
+    font-size: 0.6rem;
 }
 
 /* .team section begins */
@@ -280,23 +281,35 @@ header {
 
 /* .portfolio section begins */
 .portfolio {
-    background: $lightSage;
-    padding: 10em 1em;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .portfolio-container {
+    background: $lightSage;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 3em;
+    padding: 10em 1em;
 }
 
 .portfolio-container button {
     padding: 1.2em 2.5em;
     background: $white;
     border: none;
+}
+
+.portfolio .img-container {
+    display: none;
+    align-self: stretch;
+}
+
+.portfolio img {
+    object-fit: cover;
 }
 
 /* footer begins */

@@ -2,4 +2,19 @@
     .team-container li {
         width: calc((100% / 3) - 1.5em);
     }
+
+    .portfolio {
+        .wrapper {
+            display: flex;
+        }
+
+        .portfolio-container,
+        .img-container {
+            flex: 1 1 50%;
+        }
+
+        .img-container {
+            display: inline-flex;
+        }
+    }
 }

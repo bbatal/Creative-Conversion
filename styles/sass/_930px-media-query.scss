@@ -12,10 +12,17 @@
     }
 
     // .products section
+    .products-spacer {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     ul.products-container {
+        width: 60%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
 
         .product {
             margin: 3em 0;
@@ -24,6 +31,13 @@
     }
 
     .products {
-        background-position: 100% 50%;
+        max-width: 1500px;
+        padding: 10em 0;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: 50% 50%;
+        display: flex;
+        justify-content: flex-end;
     }
+
 }
