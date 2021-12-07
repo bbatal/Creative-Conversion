@@ -28,6 +28,51 @@
     display: flex;
   }
 
+  // blog page --- comment section
+  .comments h2,
+  .leave-comment h2 {
+    text-align: start;
+      font-size: clamp(0.5rem, 1rem + 3vw , 1.7rem);
+  }
+
+  .comments {
+    .comment {
+      flex-direction: row;
+      align-items: flex-start;
+
+      .img-container {
+        margin: 1.5em 1em 2em 0;
+      }
+
+      .reply-container {
+        width: 80%;
+        height: 175px;
+      }
+
+      // pseudo element tooltip styles
+      .reply-container::before {
+      border-top: solid transparent 7px;
+      border-right: solid rgb(244, 244, 244) 16px;
+      border-bottom: solid transparent 7px;
+      top: 10px;
+      left: -23px;
+      }
+    }
+  }
+
+  //  blog page --- .leave-comment section begins
+  .leave-comment {
+    #userName,
+    #userEmail,
+    #userSubject {
+      width: calc((100% / 3) - 2em);
+    }
+
+    form {
+      gap: 2em;
+    }
+  }
+
   // footer 
   
 }

@@ -330,7 +330,7 @@ ul {
 .comments h2,
 .leave-comment h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.5rem, 1rem + 3vw ,1.85rem);
+  font-size: clamp(0.5rem, 1rem + 3vw , 2.8rem);
   font-weight: bold;
   letter-spacing: 1.8px;
   line-height: inherit;
@@ -338,7 +338,7 @@ ul {
 }
 
 .blog-header {
-  background-image: url(../../assets/blog-1.jpeg);
+  background-image: url("../../assets/blog-1.jpeg");
   background-size: cover;
   background-position: 2% 50%;
 }
@@ -355,6 +355,8 @@ ul {
 .blog h2 {
   text-align: center;
   line-height: 1.2;
+  text-transform: uppercase;
+  font-size: clamp(0.5rem, 1rem + 3vw , 3.1279rem);
 }
 .blog .breadcrumbs {
   text-transform: none;
@@ -531,9 +533,9 @@ ul {
   content: "";
   height: 0;
   width: 0;
-  border-left: solid transparent 8px;
-  border-right: solid transparent 8px;
-  border-bottom: solid #f4f4f4 13px;
+  border-left: solid transparent 7px;
+  border-right: solid transparent 7px;
+  border-bottom: solid #f4f4f4 16px;
   position: absolute;
   top: -13px;
   right: 48%;
@@ -573,7 +575,7 @@ ul {
   background: transparent;
   border: none;
   border-bottom: 2px solid #dbdbdb;
-  padding: 2em 0 1em 0;
+  padding: 2em 0 0.3em 0;
   margin: 0 auto;
   font-weight: normal;
 }
@@ -598,11 +600,10 @@ ul {
 /* Header Styles */
 header {
   min-height: 85vh;
-  background-image: url("/assets/home-1.jpeg");
+  background-image: url("../assets/home-1.jpeg");
   background-size: cover;
   background-position: 51% 50%;
   padding: 20px 0;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1131,6 +1132,45 @@ header .header-nav .mobile i {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .comments h2,
+.leave-comment h2 {
+    text-align: start;
+    font-size: clamp(0.5rem, 1rem + 3vw , 1.7rem);
+  }
+
+  .comments .comment {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .comments .comment .img-container {
+    margin: 1.5em 1em 2em 0;
+  }
+  .comments .comment .reply-container {
+    width: 80%;
+    height: 175px;
+  }
+  .comments .comment .reply-container::before {
+    border-top: solid transparent 7px;
+    border-right: solid #f4f4f4 16px;
+    border-bottom: solid transparent 7px;
+    top: 10px;
+    left: -23px;
+  }
+
+  .leave-comment #userName,
+.leave-comment #userEmail,
+.leave-comment #userSubject {
+    width: calc((100% / 3) - 2em);
+  }
+  .leave-comment form {
+    gap: 2em;
+  }
 }
 @media (min-width: 900px) {
   .team-container .team-players {
@@ -1149,6 +1189,75 @@ header .header-nav .mobile i {
   }
   .team-container .players-wrapper p {
     margin: 0 0 1.5em 0;
+  }
+
+  .blog-header {
+    background-image: url(../../assets/blog-1.jpeg);
+    background-size: cover;
+    background-position: 50% 5%;
+  }
+
+  .blog .breadcrumbs {
+    text-align: left;
+    margin-left: 0.4em;
+    margin-bottom: 3em;
+  }
+  .blog .title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: calc(100% / 4);
+    border-bottom: none;
+    padding: 0;
+  }
+  .blog .rest-of-profile {
+    width: 75%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 5em;
+    padding-right: 2em;
+  }
+  .blog .rest-of-profile .tags {
+    display: inline;
+  }
+  .blog .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #dbdbdb;
+    margin-bottom: 3em;
+  }
+  .blog .social-links .tags-mobile {
+    display: none;
+  }
+
+  .related-posts h2 {
+    margin-bottom: 1em;
+  }
+  .related-posts .article-gallery ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .related-posts .article-gallery ul li {
+    width: calc(100% / 3);
+  }
+  .related-posts .article-gallery ul .article {
+    width: 100%;
   }
 }
 @media (min-width: 930px) {

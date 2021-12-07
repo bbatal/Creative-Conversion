@@ -4,11 +4,11 @@
 .related-posts h2,
 .comments h2,
 .leave-comment h2 {
-    @include myFont($secondaryFont, clamp(0.5rem, 1rem + 3vw ,1.85rem), bold, 1.8px, inherit, inherit);
+    @include myFont($secondaryFont, clamp(0.5rem, 1rem + 3vw , 2.8rem), bold, 1.8px, inherit, inherit);
 }
 
 .blog-header {
-    background-image: url(../../assets/blog-1.jpeg);
+    background-image: url('../../assets/blog-1.jpeg');
     background-size: cover;
     background-position: 2% 50%;
 }
@@ -27,6 +27,8 @@
     h2 {
         text-align: center;
         line-height: 1.2;
+        text-transform: uppercase;
+        font-size: clamp(0.5rem, 1rem + 3vw , 3.1279rem);
     }
 
     .breadcrumbs {
@@ -190,9 +192,9 @@
         content: '';
         height: 0;
         width: 0;
-        border-left: solid transparent 8px;
-        border-right: solid transparent 8px;
-        border-bottom: solid rgb(244, 244, 244) 13px;
+        border-left: solid transparent 7px;
+        border-right: solid transparent 7px;
+        border-bottom: solid rgb(244, 244, 244) 16px;
         position: absolute;
         top: -13px;
         right: 48%;
@@ -234,7 +236,7 @@
            background: transparent;
            border: none;
            border-bottom: 2px solid #dbdbdb;
-           padding: 2em 0 1em 0;
+           padding: 2em 0 0.3em 0;
            margin: 0 auto;
            font-weight: normal;
        }
