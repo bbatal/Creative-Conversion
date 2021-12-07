@@ -11,6 +11,15 @@
         
         .players-wrapper {
             max-width: 700px;
+
+            h2 {
+                margin: 1.5em 0;
+                text-align: start;
+            }
+
+            p {
+                margin: 0 0 1.5em 0;
+            }
         }
 
     } 
