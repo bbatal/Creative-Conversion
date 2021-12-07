@@ -302,12 +302,6 @@ button {
 }
 
 /* General Styles */
-body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#f0f0f0)), -webkit-gradient(linear, left top, right top, from(#eeeeee)), -webkit-gradient(linear, left top, right top, from(#ececec));
-  background-image: linear-gradient(to right, #f0f0f0), linear-gradient(to right, #eeeeee), linear-gradient(to right, #ececec);
-  background-blend-mode: difference;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -333,7 +327,8 @@ ul {
 
 .blog h2,
 .related-posts h2,
-.comments h2 {
+.comments h2,
+.leave-comment h2 {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(0.5rem, 1rem + 3vw ,1.85rem);
   font-weight: bold;
@@ -349,7 +344,8 @@ ul {
 }
 
 .blog,
-.related-posts {
+.related-posts,
+.leave-comment {
   padding: 6em 0 4em 0;
 }
 
@@ -483,15 +479,120 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 3em 0;
 }
 .comments .img-container {
   width: 100px;
 }
 .comments .img-container img {
-  border-radius: 50%;
+  margin: 0 auto;
 }
 .comments .reply-container {
   background: #f4f4f4;
+  margin: 1.5em 0 2em 0;
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  position: relative;
+}
+.comments .reply-container .name-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7em;
+}
+.comments .reply-container .name-btn h3 {
+  font-size: 0.75rem;
+}
+.comments .reply-container .name-btn button {
+  background: transparent;
+  border: none;
+  text-transform: none;
+  cursor: pointer;
+  font-weight: normal;
+}
+.comments .reply-container .name-btn button::before {
+  content: "-";
+  margin-right: 3px;
+}
+.comments .reply-container p:nth-child(3) {
+  font-size: 0.6rem;
+}
+.comments .reply-container::before {
+  content: "";
+  height: 0;
+  width: 0;
+  border-left: solid transparent 8px;
+  border-right: solid transparent 8px;
+  border-bottom: solid #f4f4f4 13px;
+  position: absolute;
+  top: -13px;
+  right: 48%;
+}
+
+.leave-comment {
+  background-color: #FFFFFF;
+}
+.leave-comment h2 {
+  text-align: center;
+  border-bottom: 2px solid #dbdbdb;
+  padding-bottom: 1.2em;
+}
+.leave-comment form {
+  padding: 3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.leave-comment form input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #dbdbdb;
+  padding: 2em 0 1em 0;
+}
+.leave-comment form textarea {
+  border: none;
+  border-bottom: 2px solid #dbdbdb;
+  width: 100%;
+  resize: none;
+  padding: 2em 0 1em 0;
+}
+.leave-comment form button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #dbdbdb;
+  padding: 2em 0 1em 0;
+  margin: 0 auto;
+  font-weight: normal;
+}
+.leave-comment form input::-webkit-input-placeholder, .leave-comment form textarea::-webkit-input-placeholder {
+  color: #7c7c7c;
+}
+.leave-comment form input::-moz-placeholder, .leave-comment form textarea::-moz-placeholder {
+  color: #7c7c7c;
+}
+.leave-comment form input:-ms-input-placeholder, .leave-comment form textarea:-ms-input-placeholder {
+  color: #7c7c7c;
+}
+.leave-comment form input::-ms-input-placeholder, .leave-comment form textarea::-ms-input-placeholder {
+  color: #7c7c7c;
+}
+.leave-comment form input::placeholder,
+.leave-comment form textarea::placeholder,
+.leave-comment form button {
+  color: #7c7c7c;
 }
 
 /* Header Styles */

@@ -2,7 +2,8 @@
 // typography
 .blog h2,
 .related-posts h2,
-.comments h2 {
+.comments h2,
+.leave-comment h2 {
     @include myFont($secondaryFont, clamp(0.5rem, 1rem + 3vw ,1.85rem), bold, 1.8px, inherit, inherit);
 }
 
@@ -14,7 +15,8 @@
 
 // general section styling
 .blog,
-.related-posts {
+.related-posts,
+.leave-comment {
     padding: 6em 0 4em 0;
 }
 
@@ -137,18 +139,112 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 3em 0;
     }
 
     .img-container {
         width: 100px;
-        
+
         img {
-            border-radius: 50%;
+            margin: 0 auto;
         }
     }
 
     .reply-container {
         background: rgb(244, 244, 244);
+        margin: 1.5em 0 2em 0;
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        position: relative;
+
+        .name-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.7em;
+            h3 {
+                font-size: 0.75rem;
+            }
+
+            button {
+                background: transparent;
+                border: none;
+                text-transform: none;
+                cursor: pointer;
+                font-weight: normal;
+            }
+
+            button::before {
+                content: '-';
+                margin-right: 3px;
+            }
+        }
+
+        p:nth-child(3){
+            font-size: 0.6rem;
+        }
     }
+
+    .reply-container::before {
+        content: '';
+        height: 0;
+        width: 0;
+        border-left: solid transparent 8px;
+        border-right: solid transparent 8px;
+        border-bottom: solid rgb(244, 244, 244) 13px;
+        position: absolute;
+        top: -13px;
+        right: 48%;
+    }
+
+
+}
+
+.leave-comment {
+    background-color: $white;
+    h2 {
+        text-align: center;
+        border-bottom: 2px solid #dbdbdb;
+        padding-bottom: 1.2em;
+    }
+
+   form {
+       padding: 3em 0;
+       display: flex;
+       flex-wrap: wrap;
+
+       input {
+           width: 100%;
+           border: none;
+           border-bottom: 2px solid #dbdbdb;
+           padding: 2em 0 1em 0;
+       }
+
+       textarea {
+           border: none;
+           border-bottom: 2px solid #dbdbdb;
+           width: 100%;
+           resize: none;
+           padding: 2em 0 1em 0;
+       }
+
+       button {
+           width: 100%;
+           background: transparent;
+           border: none;
+           border-bottom: 2px solid #dbdbdb;
+           padding: 2em 0 1em 0;
+           margin: 0 auto;
+           font-weight: normal;
+       }
+
+       input::placeholder,
+       textarea::placeholder,
+       button {
+           color: #7c7c7c;
+       }
+   }
+
 }
 
