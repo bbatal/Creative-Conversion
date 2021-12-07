@@ -15,4 +15,22 @@
 
     } 
 
+    // INDEX.HTML footer 
+    footer {
+        .flex-footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .contact {
+                align-items: start;
+                text-align: start;
+            }
+
+            .recent-posts {
+                text-align: start;
+            }
+        }
+    }
+
 }
