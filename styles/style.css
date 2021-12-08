@@ -345,7 +345,8 @@ ul {
   line-height: inherit;
   color: #333333;
   position: relative;
-  margin-top: 16vh;
+  max-width: 1060px;
+  margin: 16vh auto 0 auto;
   line-height: 1.2;
 }
 .contact-title h2 span.new-line {
@@ -372,6 +373,10 @@ ul {
 .contact-details p {
   text-align: center;
 }
+.contact-details .details-title {
+  max-width: 557px;
+  margin: 0 auto;
+}
 
 .contact-types ul {
   display: -webkit-box;
@@ -394,11 +399,11 @@ ul {
   text-align: center;
 }
 .contact-types ul li i {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1rem + 2vw, 2rem);
 }
 .contact-types ul li div {
   text-align: center;
-  max-width: 260px;
+  max-width: 262px;
   margin: 0 auto;
 }
 .contact-types ul li div * {
@@ -1030,6 +1035,49 @@ header .header-nav .mobile i {
   }
   footer .flex-footer .recent-posts {
     text-align: start;
+  }
+
+  .contact-details .details-title {
+    margin: 0 auto 0 0;
+  }
+  .contact-details .details-title h3,
+.contact-details .details-title p {
+    text-align: start;
+  }
+
+  .contact-types ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 3.5em 0;
+  }
+  .contact-types ul li .phone,
+.contact-types ul li .address {
+    border-bottom: none;
+    padding-bottom: 0;
+    border-right: 2px solid #dbdbdb;
+    padding-right: 3em;
+  }
+  .contact-types ul li div {
+    text-align: start;
+    height: 230px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-types ul li div p {
+    text-align: inherit;
   }
 }
 @media (min-width: 930px) {
