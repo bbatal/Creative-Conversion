@@ -114,4 +114,45 @@
 }
 
 
+    // CONTACT.HTML --- .contact-details styling begin
+    .contact-details {
+        .details-title {
+            margin: 0 auto 0 0;
+            h3,
+            p {
+                text-align: start;
+            }
+        }
+
+
+    }
+
+    .contact-types ul {
+        flex-direction: row;
+        align-items: baseline;
+        margin: 3.5em 0;
+
+        li {
+            .phone,
+            .address {
+                border-bottom: none;
+                padding-bottom: 0;
+                border-right: 2px solid #dbdbdb;
+                padding-right: 3em;
+            }
+
+            div {
+                text-align: start;
+                height: 230px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    text-align: inherit;
+                }
+            }
+        }
+    }
+
 }

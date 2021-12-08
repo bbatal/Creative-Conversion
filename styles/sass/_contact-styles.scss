@@ -1,0 +1,136 @@
+.contact-header .header-nav {
+    padding: 2.15em 0;
+}
+
+.contact-title{
+    background-image: url(../../assets/contact-1.jpeg);
+    background-size: cover;
+    background-position: 38% 50%;
+    max-height: 25vh;
+    padding: 20px 0;
+    margin: 0 auto;
+
+    h2 {
+        @include myFont($secondaryFont, 1.85rem, bold, 0.9px, inherit, $black);
+        position: relative;
+        max-width: 1060px;
+        margin: 16vh auto 0 auto;
+
+        span.new-line {
+            display: block;
+        }
+
+        line-height: 1.2;
+
+        span.c-pseudo {
+            border-top: 2px solid $black;
+            padding-top: 1em;
+        }
+    }
+}
+
+.contact-details {
+    padding: 6.5em 0;
+
+    h3 {
+        text-align: center;
+        @include myFont($secondaryFont, 1rem, bold, 0.9px, inherit, $black);
+        margin: 0 0 1em 0;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .details-title {
+        max-width: 557px;
+        margin: 0 auto;
+    }
+}
+
+.contact-types ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+
+    li {
+        width: 60%;
+        p {
+            text-align: center;
+        }
+
+        i {
+            font-size: clamp(0.8rem, 1rem + 2vw, 2rem);
+        }
+
+        div {
+            text-align: center;
+            max-width: 262px;
+            margin: 0 auto;
+
+            * {
+                margin-top: 0.5em;
+            }
+        }
+
+        .phone,
+        .address {
+            border-bottom: 2px solid #dbdbdb;
+            padding-bottom: 3em;
+        }
+    }
+}
+
+.get-in-touch {
+    h3 {
+        text-align: center;
+        border-bottom: 2px solid #dbdbdb;
+        padding-bottom: 1.2em;
+        font-weight: bold;
+    }
+
+    p {
+        text-align: center;
+        padding: 1.5em 0;
+    }
+
+   form {
+       padding: 1em 0 3em 0;
+       display: flex;
+       flex-wrap: wrap;
+
+       input {
+           width: 100%;
+           border: none;
+           border-bottom: 2px solid #dbdbdb;
+           padding: 2em 0 1em 0;
+       }
+
+       textarea {
+           border: none;
+           border-bottom: 2px solid #dbdbdb;
+           width: 100%;
+           resize: none;
+           padding: 2em 0 1em 0;
+       }
+
+       button {
+           width: 100%;
+           background: transparent;
+           border: none;
+           border-bottom: 2px solid #dbdbdb;
+           padding: 2em 0 0.3em 0;
+           margin: 0 auto;
+           font-weight: normal;
+       }
+
+       input::placeholder,
+       textarea::placeholder,
+       button {
+           color: #7c7c7c;
+       }
+   }
+
+}

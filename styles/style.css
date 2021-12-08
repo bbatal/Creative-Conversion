@@ -600,6 +600,154 @@ ul {
   color: #7c7c7c;
 }
 
+.contact-header .header-nav {
+  padding: 2.15em 0;
+}
+
+.contact-title {
+  background-image: url(../../assets/contact-1.jpeg);
+  background-size: cover;
+  background-position: 38% 50%;
+  max-height: 25vh;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.contact-title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.85rem;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  line-height: inherit;
+  color: #333333;
+  position: relative;
+  max-width: 1060px;
+  margin: 16vh auto 0 auto;
+  line-height: 1.2;
+}
+.contact-title h2 span.new-line {
+  display: block;
+}
+.contact-title h2 span.c-pseudo {
+  border-top: 2px solid #333333;
+  padding-top: 1em;
+}
+
+.contact-details {
+  padding: 6.5em 0;
+}
+.contact-details h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  line-height: inherit;
+  color: #333333;
+  margin: 0 0 1em 0;
+}
+.contact-details p {
+  text-align: center;
+}
+.contact-details .details-title {
+  max-width: 557px;
+  margin: 0 auto;
+}
+
+.contact-types ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+.contact-types ul li {
+  width: 60%;
+}
+.contact-types ul li p {
+  text-align: center;
+}
+.contact-types ul li i {
+  font-size: clamp(0.8rem, 1rem + 2vw, 2rem);
+}
+.contact-types ul li div {
+  text-align: center;
+  max-width: 262px;
+  margin: 0 auto;
+}
+.contact-types ul li div * {
+  margin-top: 0.5em;
+}
+.contact-types ul li .phone,
+.contact-types ul li .address {
+  border-bottom: 2px solid #dbdbdb;
+  padding-bottom: 3em;
+}
+
+.get-in-touch h3 {
+  text-align: center;
+  border-bottom: 2px solid #dbdbdb;
+  padding-bottom: 1.2em;
+  font-weight: bold;
+}
+.get-in-touch p {
+  text-align: center;
+  padding: 1.5em 0;
+}
+.get-in-touch form {
+  padding: 1em 0 3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.get-in-touch form input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #dbdbdb;
+  padding: 2em 0 1em 0;
+}
+.get-in-touch form textarea {
+  border: none;
+  border-bottom: 2px solid #dbdbdb;
+  width: 100%;
+  resize: none;
+  padding: 2em 0 1em 0;
+}
+.get-in-touch form button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #dbdbdb;
+  padding: 2em 0 0.3em 0;
+  margin: 0 auto;
+  font-weight: normal;
+}
+.get-in-touch form input::-webkit-input-placeholder, .get-in-touch form textarea::-webkit-input-placeholder {
+  color: #7c7c7c;
+}
+.get-in-touch form input::-moz-placeholder, .get-in-touch form textarea::-moz-placeholder {
+  color: #7c7c7c;
+}
+.get-in-touch form input:-ms-input-placeholder, .get-in-touch form textarea:-ms-input-placeholder {
+  color: #7c7c7c;
+}
+.get-in-touch form input::-ms-input-placeholder, .get-in-touch form textarea::-ms-input-placeholder {
+  color: #7c7c7c;
+}
+.get-in-touch form input::placeholder,
+.get-in-touch form textarea::placeholder,
+.get-in-touch form button {
+  color: #7c7c7c;
+}
+
 /* Header Styles */
 .home-header {
   min-height: 85vh;
@@ -1166,12 +1314,20 @@ header .header-nav .mobile i {
     left: -23px;
   }
 
-  .leave-comment #userName,
-.leave-comment #userEmail,
-.leave-comment #userSubject {
+  .get-in-touch h3 {
+    text-align: start;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .get-in-touch p {
+    text-align: start;
+  }
+  .get-in-touch #userName,
+.get-in-touch #userEmail,
+.get-in-touch #userSubject {
     width: calc((100% / 3) - 2em);
   }
-  .leave-comment form {
+  .get-in-touch form {
     gap: 2em;
   }
 }
@@ -1280,6 +1436,49 @@ header .header-nav .mobile i {
   }
   .related-posts .article-gallery ul .article {
     width: 100%;
+  }
+
+  .contact-details .details-title {
+    margin: 0 auto 0 0;
+  }
+  .contact-details .details-title h3,
+.contact-details .details-title p {
+    text-align: start;
+  }
+
+  .contact-types ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 3.5em 0;
+  }
+  .contact-types ul li .phone,
+.contact-types ul li .address {
+    border-bottom: none;
+    padding-bottom: 0;
+    border-right: 2px solid #dbdbdb;
+    padding-right: 3em;
+  }
+  .contact-types ul li div {
+    text-align: start;
+    height: 230px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-types ul li div p {
+    text-align: inherit;
   }
 }
 @media (min-width: 930px) {

@@ -60,8 +60,18 @@
     }
   }
 
-  //  blog page --- .leave-comment section begins
-  .leave-comment {
+  // CONTACT.HTML -- form responsiveness --
+  .get-in-touch {
+    h3 {
+        text-align: start;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    p {
+        text-align: start;
+    }
+
     #userName,
     #userEmail,
     #userSubject {
