@@ -332,7 +332,7 @@ ul {
 }
 
 /* Header Styles */
-header {
+.home-header {
   min-height: 85vh;
   background-image: url("../../assets/home-1.jpeg");
   background-size: cover;
