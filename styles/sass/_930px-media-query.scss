@@ -32,9 +32,10 @@
 
     .products {
         max-width: 1500px;
-        padding: 10em 0;
+        padding: 5em 0;
         margin: 0 auto;
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         background-position: 50% 50%;
         display: flex;
         justify-content: flex-end;

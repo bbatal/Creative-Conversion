@@ -11,6 +11,15 @@
         
         .players-wrapper {
             max-width: 700px;
+
+            h2 {
+                margin: 1.5em 0;
+                text-align: start;
+            }
+
+            p {
+                margin: 0 0 1.5em 0;
+            }
         }
 
     } 
@@ -32,5 +41,77 @@
             }
         }
     }
+
+
+    // BLOG PAGE MEDIA STYLES
+    .blog-header {
+    background-image: url(../../assets/blog-1.jpeg);
+    background-size: cover;
+    background-position: 50% 5%;
+}
+
+.blog {
+    .breadcrumbs {
+        text-align: left;
+        margin-left: 0.4em;
+        margin-bottom: 3em;
+    }
+
+    .title {
+        flex-direction: row;
+        width: calc(100% / 4);
+        border-bottom: none;
+        padding: 0;
+    }
+
+    .rest-of-profile {
+        width: 75%;
+        align-items: center;
+        padding: 0;
+        justify-content: flex-end;
+        gap: 5em;
+        padding-right: 2em;
+
+        .tags {
+            display: inline;
+        }
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1em;
+        border-bottom: 2px solid #dbdbdb;
+        margin-bottom: 3em;
+    }
+
+    .social-links {
+        .tags-mobile {
+            display: none;
+        }
+    }
+
+}
+
+.related-posts {
+    h2 {
+        margin-bottom: 1em;
+    }
+
+    .article-gallery ul {
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+            width: calc(100% / 3);
+        }
+
+        .article {
+            width: 100%;
+        }
+    }
+
+}
+
 
 }
