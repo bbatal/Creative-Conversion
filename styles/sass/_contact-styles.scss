@@ -1,5 +1,12 @@
-.contact-header {
+.contact-header .header-nav {
+    padding: 2.15em 0;
+}
+
+.contact-title{
     background-image: url(../../assets/contact-1.jpeg);
     background-size: cover;
     background-position: center;
+    min-height: 25vh;
+    padding: 20px 0;
+    margin: 0 auto;
 }
