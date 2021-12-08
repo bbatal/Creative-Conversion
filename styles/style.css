@@ -1314,20 +1314,26 @@ header .header-nav .mobile i {
     left: -23px;
   }
 
-  .get-in-touch h3 {
+  .get-in-touch h3,
+.leave-comment h3 {
     text-align: start;
     border-bottom: none;
     padding-bottom: 0;
   }
-  .get-in-touch p {
+  .get-in-touch p,
+.leave-comment p {
     text-align: start;
   }
   .get-in-touch #userName,
 .get-in-touch #userEmail,
-.get-in-touch #userSubject {
+.get-in-touch #userSubject,
+.leave-comment #userName,
+.leave-comment #userEmail,
+.leave-comment #userSubject {
     width: calc((100% / 3) - 2em);
   }
-  .get-in-touch form {
+  .get-in-touch form,
+.leave-comment form {
     gap: 2em;
   }
 }
