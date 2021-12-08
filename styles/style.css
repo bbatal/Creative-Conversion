@@ -332,10 +332,82 @@ ul {
 .contact-title {
   background-image: url(../../assets/contact-1.jpeg);
   background-size: cover;
-  background-position: center;
-  min-height: 25vh;
+  background-position: 38% 50%;
+  max-height: 25vh;
   padding: 20px 0;
   margin: 0 auto;
+}
+.contact-title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.85rem;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  line-height: inherit;
+  color: #333333;
+  position: relative;
+  margin-top: 16vh;
+  line-height: 1.2;
+}
+.contact-title h2 span.new-line {
+  display: block;
+}
+.contact-title h2 span.c-pseudo {
+  border-top: 2px solid #333333;
+  padding-top: 1em;
+}
+
+.contact-details {
+  padding: 6.5em 0;
+}
+.contact-details h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  line-height: inherit;
+  color: #333333;
+  margin: 0 0 1em 0;
+}
+.contact-details p {
+  text-align: center;
+}
+
+.contact-types ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+.contact-types ul li {
+  width: 60%;
+}
+.contact-types ul li p {
+  text-align: center;
+}
+.contact-types ul li i {
+  font-size: 1rem;
+}
+.contact-types ul li div {
+  text-align: center;
+  max-width: 260px;
+  margin: 0 auto;
+}
+.contact-types ul li div * {
+  margin-top: 0.5em;
+}
+.contact-types ul li .phone,
+.contact-types ul li .address {
+  border-bottom: 2px solid black;
+  padding-bottom: 3em;
 }
 
 /* Header Styles */
