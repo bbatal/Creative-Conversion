@@ -1,0 +1,33 @@
+.home,
+.blog-link,
+.portfolio,
+.shop,
+.contact-link {
+    position: relative;
+}
+
+.home::after,
+.blog-link::after,
+.portfolio::after,
+.shop::after,
+.contact-link::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: $black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: width 0.4s ease;
+}
+
+// Thank you to Deepak Yadav from stack overflow who has provided me with this transition idea
+
+.home:hover::after,
+.blog-link:hover::after,
+.portfolio:hover::after,
+.shop:hover::after,
+.contact-link:hover::after {
+    width: 95%;
+}
+

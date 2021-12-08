@@ -325,6 +325,38 @@ ul {
   margin: 0 auto;
 }
 
+.home,
+.blog-link,
+.portfolio,
+.shop,
+.contact-link {
+  position: relative;
+}
+
+.home::after,
+.blog-link::after,
+.portfolio::after,
+.shop::after,
+.contact-link::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: #333333;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
+
+.home:hover::after,
+.blog-link:hover::after,
+.portfolio:hover::after,
+.shop:hover::after,
+.contact-link:hover::after {
+  width: 95%;
+}
+
 .blog h2,
 .related-posts h2,
 .comments h2,
