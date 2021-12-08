@@ -1005,6 +1005,23 @@ header .header-nav .mobile i {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .get-in-touch h3 {
+    text-align: start;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .get-in-touch p {
+    text-align: start;
+  }
+  .get-in-touch #userName,
+.get-in-touch #userEmail,
+.get-in-touch #userSubject {
+    width: calc((100% / 3) - 2em);
+  }
+  .get-in-touch form {
+    gap: 2em;
+  }
 }
 @media (min-width: 900px) {
   .team-container .team-players {
