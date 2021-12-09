@@ -1,7 +1,6 @@
 // Main begins
 // typography
 .blog h2,
-.related-posts h2,
 .comments h2,
 .leave-comment h2 {
     @include myFont($secondaryFont, clamp(0.5rem, 1rem + 3vw , 2.8rem), bold, 1.8px, inherit, inherit);
@@ -17,15 +16,24 @@
 }
 
 // general section styling
-.blog,
-.related-posts,
-.leave-comment {
+.related-posts {
     padding: 6em 0 4em 0;
+}
+
+.leave-comment {
+    padding: 7em 0 11em 0;
+}
+
+.blog {
+    padding: 9em 0 0 0;
 }
 
 //  .blog section begins
 .blog {
     background-color: $white;
+    p {
+        color: #a4a4a4
+    }
 
     h2 {
         text-align: center;
@@ -47,16 +55,20 @@
     .title {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: start;
         gap: 1em;
         padding-bottom: 1em;
         border-bottom: 2px solid #dbdbdb;
+
+        .name-title {
+            margin-right: auto;
+            margin-left: 1em;
+        }
     }
 
     .img-container {
-        width: 100px;
+        width: 80px;
         
         img {
             border-radius: 50%;
@@ -67,7 +79,7 @@
         display: flex;
         justify-content: space-around;
         gap: 2em;
-        text-align: center;
+        text-align: start;
         padding-top: 1em;
 
         .tags {
@@ -82,6 +94,7 @@
 
         .bolded {
             font-weight: 700;
+            color: $black;
         }
     }
 
@@ -109,7 +122,9 @@
     h2 {
         text-align: center;
         border-bottom: 2px solid #dbdbdb;
-        padding-bottom: 1.2em;
+        padding-bottom: 0.7em;
+        font-size: clamp(0.5rem, 1rem + 3vw , 2rem);
+        font-weight: bold;
     }
 
     .article-gallery ul {
@@ -126,6 +141,7 @@
 
         .article p {
             margin: 0.6em 0 0 0;
+            text-transform: uppercase;
         }
     }
 }
@@ -144,7 +160,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 3em 0;
+        margin: 2.2em 0 0 0;
     }
 
     .img-container {
@@ -157,7 +173,7 @@
 
     .reply-container {
         background: rgb(244, 244, 244);
-        margin: 1.5em 0 2em 0;
+        margin: 1.5em 0 0 0;
         padding: 1.5em;
         display: flex;
         flex-direction: column;
@@ -211,7 +227,7 @@
     h2 {
         text-align: center;
         border-bottom: 2px solid #dbdbdb;
-        padding-bottom: 1.2em;
+        padding-bottom: 0.7em;
     }
 
    form {

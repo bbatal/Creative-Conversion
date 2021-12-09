@@ -54,11 +54,12 @@
     .breadcrumbs {
         text-align: left;
         margin-left: 0.4em;
-        margin-bottom: 3em;
+        margin-bottom: 6em;
     }
 
     .title {
         flex-direction: row;
+        justify-content: space-between;
         width: calc(100% / 4);
         border-bottom: none;
         padding: 0;
@@ -80,9 +81,9 @@
     .profile {
         display: flex;
         align-items: center;
-        padding-bottom: 1em;
+        padding-bottom: 2.2em;
         border-bottom: 2px solid #dbdbdb;
-        margin-bottom: 3em;
+        margin-bottom: 4em;
     }
 
     .social-links {
@@ -95,7 +96,8 @@
 
 .related-posts {
     h2 {
-        margin-bottom: 1em;
+        margin-bottom: 0em;
+        text-align: start;
     }
 
     .article-gallery ul {

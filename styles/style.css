@@ -358,7 +358,6 @@ ul {
 }
 
 .blog h2,
-.related-posts h2,
 .comments h2,
 .leave-comment h2 {
   font-family: "Montserrat", sans-serif;
@@ -378,14 +377,23 @@ ul {
   margin: 0 auto;
 }
 
-.blog,
-.related-posts,
-.leave-comment {
+.related-posts {
   padding: 6em 0 4em 0;
+}
+
+.leave-comment {
+  padding: 7em 0 11em 0;
+}
+
+.blog {
+  padding: 9em 0 0 0;
 }
 
 .blog {
   background-color: #FFFFFF;
+}
+.blog p {
+  color: #a4a4a4;
 }
 .blog h2 {
   text-align: center;
@@ -409,19 +417,20 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  text-align: start;
   gap: 1em;
   padding-bottom: 1em;
   border-bottom: 2px solid #dbdbdb;
 }
+.blog .title .name-title {
+  margin-right: auto;
+  margin-left: 1em;
+}
 .blog .img-container {
-  width: 100px;
+  width: 80px;
 }
 .blog .img-container img {
   border-radius: 50%;
@@ -433,7 +442,7 @@ ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 2em;
-  text-align: center;
+  text-align: start;
   padding-top: 1em;
 }
 .blog .rest-of-profile .tags {
@@ -444,6 +453,7 @@ ul {
 }
 .blog .text-content .bolded {
   font-weight: 700;
+  color: #333333;
 }
 .blog .social-links {
   display: -webkit-box;
@@ -473,7 +483,9 @@ ul {
 .related-posts h2 {
   text-align: center;
   border-bottom: 2px solid #dbdbdb;
-  padding-bottom: 1.2em;
+  padding-bottom: 0.7em;
+  font-size: clamp(0.5rem, 1rem + 3vw , 2rem);
+  font-weight: bold;
 }
 .related-posts .article-gallery ul {
   display: -webkit-box;
@@ -495,6 +507,7 @@ ul {
 }
 .related-posts .article-gallery ul .article p {
   margin: 0.6em 0 0 0;
+  text-transform: uppercase;
 }
 
 .comments {
@@ -516,7 +529,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 3em 0;
+  margin: 2.2em 0 0 0;
 }
 .comments .img-container {
   width: 100px;
@@ -526,7 +539,7 @@ ul {
 }
 .comments .reply-container {
   background: #f4f4f4;
-  margin: 1.5em 0 2em 0;
+  margin: 1.5em 0 0 0;
   padding: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,7 +595,7 @@ ul {
 .leave-comment h2 {
   text-align: center;
   border-bottom: 2px solid #dbdbdb;
-  padding-bottom: 1.2em;
+  padding-bottom: 0.7em;
 }
 .leave-comment form {
   padding: 3em 0;
@@ -1470,13 +1483,16 @@ header .header-nav .mobile i {
   .blog .breadcrumbs {
     text-align: left;
     margin-left: 0.4em;
-    margin-bottom: 3em;
+    margin-bottom: 6em;
   }
   .blog .title {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: calc(100% / 4);
     border-bottom: none;
     padding: 0;
@@ -1503,16 +1519,17 @@ header .header-nav .mobile i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 1em;
+    padding-bottom: 2.2em;
     border-bottom: 2px solid #dbdbdb;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
   }
   .blog .social-links .tags-mobile {
     display: none;
   }
 
   .related-posts h2 {
-    margin-bottom: 1em;
+    margin-bottom: 0em;
+    text-align: start;
   }
   .related-posts .article-gallery ul {
     -webkit-box-orient: horizontal;
@@ -1609,6 +1626,7 @@ header .header-nav .mobile i {
 
   .products {
     max-width: 1400px;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     display: -webkit-box;
