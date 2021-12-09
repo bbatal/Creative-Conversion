@@ -23,6 +23,46 @@
     }
   }
 
+  // INDEX.html -- gallery section
+  .gallery-container {
+    position: relative;
+    .dots-menu {
+        display: none;
+      }
+
+      .left-arrow,
+      .right-arrow {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+
+        i {
+          font-size: 1.6rem;
+          color: $black;
+        }
+      }
+
+      .right-arrow {
+        right: 0;
+        top: 50%;
+      }
+
+      .left-arrow {
+        left: 0;
+        top: 50%;
+      }
+
+      .right-arrow:hover,
+      .left-arrow:hover {
+        i {
+          color: rgb(105, 105, 105);
+        }
+      }
+  }
+ 
+
   // .intro section begins
   .intro .flex-container {
     display: flex;

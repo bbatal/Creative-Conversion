@@ -1,6 +1,7 @@
 @media (min-width: 1120px) {
     .team-container {
         max-width: 1158px;
+        margin: 0 auto;
         .team-players {
             width: calc((100% / 2) - 1em);
         }

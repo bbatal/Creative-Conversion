@@ -106,9 +106,14 @@ header {
 .intro {
     display: flex;
     flex-direction: column;
-    padding: 11em 0 7em 0;
+    padding: 10em 0;
     background-color: $lightSage;
     position: relative;
+
+    .flex-container {
+        max-width: 821px;
+        margin: 0 auto;
+    }
 }
 
 .intro-img-container {
@@ -137,8 +142,13 @@ header {
 }
 
 /* .gallery section */
+.gallery-container {
+    max-width: 977px;
+    margin: 0 auto;
+}
+
 .gallery {
-    padding: 7.5em 0;
+    padding: 10em 0;
 }
 .left-arrow,
 .right-arrow {
@@ -148,6 +158,7 @@ header {
 .gallery img {
     border-radius: 50%;
     margin: 0 auto;
+    width: 250px;
 }
 
 .gallery-text {
@@ -155,6 +166,7 @@ header {
     padding: 2em 0 0 0;
     max-width: 720px;
     margin: 0 auto;
+    color: #a4a4a4;
 }
 
 .dots-menu {
@@ -184,13 +196,14 @@ header {
     background: url(../../assets/home-4.jpeg);
     background-size: cover;
     background-position: 50% 50%;
+    padding: 10em 0 7em 0;
 }
 
 .product {
     display: flex;
     align-items: flex-start;
-    max-width: 450px;
-    gap: 2em;
+    max-width: 470px;
+    gap: 1.8em;
     margin: 5em auto;
 }
 
@@ -200,8 +213,8 @@ header {
 
 .border {
     flex-shrink: 0;
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,16 +226,19 @@ header {
 .descriptor h2 {
     margin-bottom: 0.8em;
     font-size: 0.8rem;
+    letter-spacing: 0;
 }
 
 .descriptor p {
-    padding: 0 1em 0 0;
+    padding: 0 0 0 0;
     font-size: 0.6rem;
+    letter-spacing: 0;
+    color: #a4a4a4;
 }
 
 /* .team section begins */
 .team {
-    padding: 5em 0 11em 0;
+    padding: 6em 0 14em 0;
     position: relative;
     background: $white;
 }
@@ -239,7 +255,7 @@ header {
 }
 
 .team h2 {
-    margin: 2em 0 2em 0;
+    margin: 2em 0 6em 0;
     text-align: center;
 }
 
@@ -253,6 +269,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 2em;
+    color: #a3a3a3;
 }
 
 .team-container li {
@@ -288,7 +305,7 @@ header {
 /* .portfolio section begins */
 .portfolio {
     display: flex;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -301,12 +318,17 @@ header {
     text-align: center;
     gap: 3em;
     padding: 10em 1em;
+
+    p {
+        max-width: 581px;
+    }
 }
 
 .portfolio-container button {
     padding: 1.2em 2.5em;
     background: $white;
     border: none;
+    cursor: pointer;
 }
 
 .portfolio .img-container {

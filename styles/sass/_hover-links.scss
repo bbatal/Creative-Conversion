@@ -1,6 +1,6 @@
 .home,
 .blog-link,
-.portfolio,
+.portfolio-link,
 .shop,
 .contact-link {
     position: relative;
@@ -8,7 +8,7 @@
 
 .home::after,
 .blog-link::after,
-.portfolio::after,
+.portfolio-link::after,
 .shop::after,
 .contact-link::after {
     content: '';
@@ -25,7 +25,7 @@
 
 .home:hover::after,
 .blog-link:hover::after,
-.portfolio:hover::after,
+.portfolio-link:hover::after,
 .shop:hover::after,
 .contact-link:hover::after {
     width: 95%;

@@ -327,7 +327,7 @@ ul {
 
 .home,
 .blog-link,
-.portfolio,
+.portfolio-link,
 .shop,
 .contact-link {
   position: relative;
@@ -335,7 +335,7 @@ ul {
 
 .home::after,
 .blog-link::after,
-.portfolio::after,
+.portfolio-link::after,
 .shop::after,
 .contact-link::after {
   content: "";
@@ -351,7 +351,7 @@ ul {
 
 .home:hover::after,
 .blog-link:hover::after,
-.portfolio:hover::after,
+.portfolio-link:hover::after,
 .shop:hover::after,
 .contact-link:hover::after {
   width: 95%;
@@ -897,9 +897,13 @@ header .fa-shopping-bag::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 11em 0 7em 0;
+  padding: 10em 0;
   background-color: #C3DAB7;
   position: relative;
+}
+.intro .flex-container {
+  max-width: 821px;
+  margin: 0 auto;
 }
 
 .intro-img-container {
@@ -928,8 +932,13 @@ header .fa-shopping-bag::after {
 }
 
 /* .gallery section */
+.gallery-container {
+  max-width: 977px;
+  margin: 0 auto;
+}
+
 .gallery {
-  padding: 7.5em 0;
+  padding: 10em 0;
 }
 
 .left-arrow,
@@ -940,6 +949,7 @@ header .fa-shopping-bag::after {
 .gallery img {
   border-radius: 50%;
   margin: 0 auto;
+  width: 250px;
 }
 
 .gallery-text {
@@ -947,6 +957,7 @@ header .fa-shopping-bag::after {
   padding: 2em 0 0 0;
   max-width: 720px;
   margin: 0 auto;
+  color: #a4a4a4;
 }
 
 .dots-menu {
@@ -980,6 +991,7 @@ header .fa-shopping-bag::after {
   background: url(../../assets/home-4.jpeg);
   background-size: cover;
   background-position: 50% 50%;
+  padding: 10em 0 7em 0;
 }
 
 .product {
@@ -989,8 +1001,8 @@ header .fa-shopping-bag::after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 450px;
-  gap: 2em;
+  max-width: 470px;
+  gap: 1.8em;
   margin: 5em auto;
 }
 
@@ -1001,8 +1013,8 @@ header .fa-shopping-bag::after {
 .border {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 55px;
-  height: 55px;
+  width: 48px;
+  height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1020,16 +1032,19 @@ header .fa-shopping-bag::after {
 .descriptor h2 {
   margin-bottom: 0.8em;
   font-size: 0.8rem;
+  letter-spacing: 0;
 }
 
 .descriptor p {
-  padding: 0 1em 0 0;
+  padding: 0 0 0 0;
   font-size: 0.6rem;
+  letter-spacing: 0;
+  color: #a4a4a4;
 }
 
 /* .team section begins */
 .team {
-  padding: 5em 0 11em 0;
+  padding: 6em 0 14em 0;
   position: relative;
   background: #FFFFFF;
 }
@@ -1046,7 +1061,7 @@ header .fa-shopping-bag::after {
 }
 
 .team h2 {
-  margin: 2em 0 2em 0;
+  margin: 2em 0 6em 0;
   text-align: center;
 }
 
@@ -1067,6 +1082,7 @@ header .fa-shopping-bag::after {
       -ms-flex-align: center;
           align-items: center;
   gap: 2em;
+  color: #a3a3a3;
 }
 
 .team-container li {
@@ -1118,7 +1134,7 @@ header .fa-shopping-bag::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -1141,11 +1157,15 @@ header .fa-shopping-bag::after {
   gap: 3em;
   padding: 10em 1em;
 }
+.portfolio-container p {
+  max-width: 581px;
+}
 
 .portfolio-container button {
   padding: 1.2em 2.5em;
   background: #FFFFFF;
   border: none;
+  cursor: pointer;
 }
 
 .portfolio .img-container {
@@ -1308,6 +1328,40 @@ header .header-nav .mobile i {
   }
   header .header-nav i {
     margin-left: 0.46em;
+  }
+
+  .gallery-container {
+    position: relative;
+  }
+  .gallery-container .dots-menu {
+    display: none;
+  }
+  .gallery-container .left-arrow,
+.gallery-container .right-arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+  }
+  .gallery-container .left-arrow i,
+.gallery-container .right-arrow i {
+    font-size: 1.6rem;
+    color: #333333;
+  }
+  .gallery-container .right-arrow {
+    right: 0;
+    top: 50%;
+  }
+  .gallery-container .left-arrow {
+    left: 0;
+    top: 50%;
+  }
+  .gallery-container .right-arrow:hover i,
+.gallery-container .left-arrow:hover i {
+    color: dimgray;
   }
 
   .intro .flex-container {
@@ -1549,15 +1603,12 @@ header .header-nav .mobile i {
             justify-content: center;
   }
   ul.products-container .product {
-    margin: 3em 0;
+    margin: 2.1em 0;
     width: 50%;
   }
 
   .products {
-    max-width: 1500px;
-    padding: 5em 0;
-    margin: 0 auto;
-    background-size: contain;
+    max-width: 1400px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     display: -webkit-box;
@@ -1571,6 +1622,7 @@ header .header-nav .mobile i {
 @media (min-width: 1120px) {
   .team-container {
     max-width: 1158px;
+    margin: 0 auto;
   }
   .team-container .team-players {
     width: calc((100% / 2) - 1em);
