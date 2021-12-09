@@ -521,6 +521,17 @@ footer a:hover {
   margin: 0.6em 0 0 0;
   text-transform: uppercase;
 }
+.related-posts .article {
+  position: relative;
+}
+.related-posts .article:hover .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
 
 .comments {
   background-color: #FFFFFF;
@@ -761,7 +772,7 @@ footer a:hover {
   padding: 1.5em 0 4em 0;
 }
 .get-in-touch form {
-  padding: 1em 0 8em 0;
+  padding: 1em 0 7em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,6 +820,11 @@ footer a:hover {
 .get-in-touch form textarea::placeholder,
 .get-in-touch form button {
   color: #7c7c7c;
+}
+
+.contact-details p,
+.get-in-touch p {
+  color: #a4a4a4;
 }
 
 .leave-comment form input:focus::-webkit-input-placeholder, .leave-comment form textarea:focus::-webkit-input-placeholder, .get-in-touch form input:focus::-webkit-input-placeholder, .get-in-touch form textarea:focus::-webkit-input-placeholder {

@@ -97,7 +97,7 @@
     }
 
    form {
-       padding: 1em 0 8em 0;
+       padding: 1em 0 7em 0;
        display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
@@ -134,4 +134,9 @@
        }
    }
 
+}
+
+.contact-details p,
+.get-in-touch p {
+    color: #a4a4a4;
 }
