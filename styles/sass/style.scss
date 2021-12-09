@@ -6,6 +6,7 @@
 @import "hover-links";
 @import "blog-styling";
 @import "contact-styles";
+@import "focus-effects";
 
 /* Header Styles */
 .home-header {
@@ -378,6 +379,7 @@ footer form {
 footer .button-input-styling {
     display: flex;
     justify-content: center;
+    font-size: 1.25rem;
 }
 
 .button-input-styling input {
@@ -401,7 +403,7 @@ footer .button-input-styling {
 .banner {
     text-align: center;
     border-top: 1px solid rgb(63, 63, 63);
-    padding: 3em 0;
+    padding: 4em 0;
     letter-spacing: 5px;
     font-family: $secondaryFont;
 }

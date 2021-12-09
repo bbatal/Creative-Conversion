@@ -1,0 +1,18 @@
+.leave-comment,
+.get-in-touch {
+    form {
+        input:focus,
+        textarea:focus,
+        input:focus::placeholder,
+        textarea:focus::placeholder {
+            border-bottom: 2px solid $black;
+            color: $black;
+            opacity: 1;
+        }
+
+        button {
+            border-bottom: 2px solid $black;
+            color: $black;
+        }
+}}
+

@@ -357,6 +357,15 @@ ul {
   width: 95%;
 }
 
+footer a:hover {
+  color: #a4a4a4;
+}
+
+.portfolio .portfolio-container button:hover {
+  color: #a4a4a4;
+  background-color: #e5e5e5;
+}
+
 .blog h2,
 .comments h2,
 .leave-comment h2 {
@@ -427,7 +436,7 @@ ul {
 }
 .blog .title .name-title {
   margin-right: auto;
-  margin-left: 1em;
+  margin-left: auto;
 }
 .blog .img-container {
   width: 80px;
@@ -476,6 +485,9 @@ ul {
 .blog .social-links ul li {
   padding: 0.6em;
 }
+.blog .social-links ul li a:hover {
+  color: #dbdbdb;
+}
 
 .related-posts {
   background-color: #FFFFFF;
@@ -501,11 +513,11 @@ ul {
   gap: 3em;
   padding: 3em 0;
 }
-.related-posts .article-gallery ul .article {
+.related-posts .article-gallery ul a {
   width: 80%;
   margin: 0 auto;
 }
-.related-posts .article-gallery ul .article p {
+.related-posts .article-gallery ul a p {
   margin: 0.6em 0 0 0;
   text-transform: uppercase;
 }
@@ -604,6 +616,9 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .leave-comment form input {
   width: 100%;
@@ -666,7 +681,7 @@ ul {
   color: #333333;
   position: relative;
   max-width: 1060px;
-  margin: 16vh auto 0 auto;
+  margin: 16vh auto 0 0;
   line-height: 1.2;
 }
 .contact-title h2 span.new-line {
@@ -678,7 +693,7 @@ ul {
 }
 
 .contact-details {
-  padding: 6.5em 0;
+  padding: 9.5em 0 3em 0;
 }
 .contact-details h3 {
   text-align: center;
@@ -743,15 +758,18 @@ ul {
 }
 .get-in-touch p {
   text-align: center;
-  padding: 1.5em 0;
+  padding: 1.5em 0 4em 0;
 }
 .get-in-touch form {
-  padding: 1em 0 3em 0;
+  padding: 1em 0 8em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .get-in-touch form input {
   width: 100%;
@@ -791,6 +809,48 @@ ul {
 .get-in-touch form textarea::placeholder,
 .get-in-touch form button {
   color: #7c7c7c;
+}
+
+.leave-comment form input:focus::-webkit-input-placeholder, .leave-comment form textarea:focus::-webkit-input-placeholder, .get-in-touch form input:focus::-webkit-input-placeholder, .get-in-touch form textarea:focus::-webkit-input-placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+
+.leave-comment form input:focus::-moz-placeholder, .leave-comment form textarea:focus::-moz-placeholder, .get-in-touch form input:focus::-moz-placeholder, .get-in-touch form textarea:focus::-moz-placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+
+.leave-comment form input:focus:-ms-input-placeholder, .leave-comment form textarea:focus:-ms-input-placeholder, .get-in-touch form input:focus:-ms-input-placeholder, .get-in-touch form textarea:focus:-ms-input-placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+
+.leave-comment form input:focus::-ms-input-placeholder, .leave-comment form textarea:focus::-ms-input-placeholder, .get-in-touch form input:focus::-ms-input-placeholder, .get-in-touch form textarea:focus::-ms-input-placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+
+.leave-comment form input:focus,
+.leave-comment form textarea:focus,
+.leave-comment form input:focus::placeholder,
+.leave-comment form textarea:focus::placeholder,
+.get-in-touch form input:focus,
+.get-in-touch form textarea:focus,
+.get-in-touch form input:focus::placeholder,
+.get-in-touch form textarea:focus::placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+.leave-comment form button,
+.get-in-touch form button {
+  border-bottom: 2px solid #333333;
+  color: #333333;
 }
 
 /* Header Styles */
@@ -1253,6 +1313,7 @@ footer .button-input-styling {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.25rem;
 }
 
 .button-input-styling input {
@@ -1295,7 +1356,7 @@ footer .button-input-styling {
 .banner {
   text-align: center;
   border-top: 1px solid #3f3f3f;
-  padding: 3em 0;
+  padding: 4em 0;
   letter-spacing: 5px;
   font-family: "Montserrat", sans-serif;
 }
@@ -1435,6 +1496,10 @@ header .header-nav .mobile i {
 .leave-comment form {
     gap: 2em;
   }
+
+  .flex-footer {
+    padding: 0 0 5.5em 0;
+  }
 }
 @media (min-width: 900px) {
   .team-container .team-players {
@@ -1473,6 +1538,15 @@ header .header-nav .mobile i {
   footer .flex-footer .recent-posts {
     text-align: start;
   }
+  footer .flex-footer .twitter-widget .button-input-styling {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  footer .flex-footer .twitter-widget h3 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 
   .blog-header {
     background-image: url(../../assets/blog-1.jpeg);
@@ -1496,6 +1570,9 @@ header .header-nav .mobile i {
     width: calc(100% / 4);
     border-bottom: none;
     padding: 0;
+  }
+  .blog .title .name-title {
+    margin-left: 1em;
   }
   .blog .rest-of-profile {
     width: 75%;

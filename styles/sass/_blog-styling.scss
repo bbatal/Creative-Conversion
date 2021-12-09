@@ -63,7 +63,7 @@
 
         .name-title {
             margin-right: auto;
-            margin-left: 1em;
+            margin-left: auto;
         }
     }
 
@@ -110,6 +110,9 @@
 
             li {
                 padding: 0.6em;
+                a:hover {
+                    color: #dbdbdb;
+                }
             }
         }
     }
@@ -134,12 +137,12 @@
         gap: 3em;
         padding: 3em 0;
 
-        .article {
+        a {
             width: 80%;
             margin: 0 auto;
         }
 
-        .article p {
+        a p {
             margin: 0.6em 0 0 0;
             text-transform: uppercase;
         }
@@ -234,6 +237,7 @@
        padding: 3em 0;
        display: flex;
        flex-wrap: wrap;
+       justify-content: space-between;
 
        input {
            width: 100%;
