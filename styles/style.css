@@ -366,6 +366,48 @@ footer a:hover {
   background: #e5e5e5;
 }
 
+.leave-comment form input:focus::-webkit-input-placeholder, .leave-comment form textarea:focus::-webkit-input-placeholder, .get-in-touch form input:focus::-webkit-input-placeholder, .get-in-touch form textarea:focus::-webkit-input-placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+
+.leave-comment form input:focus::-moz-placeholder, .leave-comment form textarea:focus::-moz-placeholder, .get-in-touch form input:focus::-moz-placeholder, .get-in-touch form textarea:focus::-moz-placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+
+.leave-comment form input:focus:-ms-input-placeholder, .leave-comment form textarea:focus:-ms-input-placeholder, .get-in-touch form input:focus:-ms-input-placeholder, .get-in-touch form textarea:focus:-ms-input-placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+
+.leave-comment form input:focus::-ms-input-placeholder, .leave-comment form textarea:focus::-ms-input-placeholder, .get-in-touch form input:focus::-ms-input-placeholder, .get-in-touch form textarea:focus::-ms-input-placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+
+.leave-comment form input:focus,
+.leave-comment form textarea:focus,
+.leave-comment form input:focus::placeholder,
+.leave-comment form textarea:focus::placeholder,
+.get-in-touch form input:focus,
+.get-in-touch form textarea:focus,
+.get-in-touch form input:focus::placeholder,
+.get-in-touch form textarea:focus::placeholder {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  opacity: 1;
+}
+.leave-comment form button,
+.get-in-touch form button {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+}
+
 .blog h2,
 .comments h2,
 .leave-comment h2 {
@@ -825,48 +867,6 @@ footer a:hover {
 .contact-details p,
 .get-in-touch p {
   color: #a4a4a4;
-}
-
-.leave-comment form input:focus::-webkit-input-placeholder, .leave-comment form textarea:focus::-webkit-input-placeholder, .get-in-touch form input:focus::-webkit-input-placeholder, .get-in-touch form textarea:focus::-webkit-input-placeholder {
-  border-bottom: 2px solid #333333;
-  color: #333333;
-  opacity: 1;
-}
-
-.leave-comment form input:focus::-moz-placeholder, .leave-comment form textarea:focus::-moz-placeholder, .get-in-touch form input:focus::-moz-placeholder, .get-in-touch form textarea:focus::-moz-placeholder {
-  border-bottom: 2px solid #333333;
-  color: #333333;
-  opacity: 1;
-}
-
-.leave-comment form input:focus:-ms-input-placeholder, .leave-comment form textarea:focus:-ms-input-placeholder, .get-in-touch form input:focus:-ms-input-placeholder, .get-in-touch form textarea:focus:-ms-input-placeholder {
-  border-bottom: 2px solid #333333;
-  color: #333333;
-  opacity: 1;
-}
-
-.leave-comment form input:focus::-ms-input-placeholder, .leave-comment form textarea:focus::-ms-input-placeholder, .get-in-touch form input:focus::-ms-input-placeholder, .get-in-touch form textarea:focus::-ms-input-placeholder {
-  border-bottom: 2px solid #333333;
-  color: #333333;
-  opacity: 1;
-}
-
-.leave-comment form input:focus,
-.leave-comment form textarea:focus,
-.leave-comment form input:focus::placeholder,
-.leave-comment form textarea:focus::placeholder,
-.get-in-touch form input:focus,
-.get-in-touch form textarea:focus,
-.get-in-touch form input:focus::placeholder,
-.get-in-touch form textarea:focus::placeholder {
-  border-bottom: 2px solid #333333;
-  color: #333333;
-  opacity: 1;
-}
-.leave-comment form button,
-.get-in-touch form button {
-  border-bottom: 2px solid #333333;
-  color: #333333;
 }
 
 /* Header Styles */
