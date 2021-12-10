@@ -330,6 +330,7 @@ header {
     background: $white;
     border: none;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .portfolio .img-container {

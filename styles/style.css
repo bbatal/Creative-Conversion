@@ -363,7 +363,7 @@ footer a:hover {
 
 .portfolio .portfolio-container button:hover {
   color: #a4a4a4;
-  background-color: #e5e5e5;
+  background: #e5e5e5;
 }
 
 .blog h2,
@@ -1255,6 +1255,8 @@ header .fa-shopping-bag::after {
   background: #FFFFFF;
   border: none;
   cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .portfolio .img-container {
