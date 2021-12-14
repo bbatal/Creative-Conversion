@@ -963,9 +963,9 @@ header .fa-shopping-bag::after {
       -ms-flex-align: start;
           align-items: start;
   padding: 80px 0 0 30px;
-  position: absolute;
   background-color: black;
   color: white;
+  position: absolute;
   top: 0;
   left: 0;
   right: 50%;
@@ -1449,6 +1449,25 @@ footer .button-input-styling {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  header .header-nav .menu-pop-out {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: none;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  header .header-nav .special-mobile {
+    display: none;
   }
   header .header-nav .mobile.right {
     display: inline-block;

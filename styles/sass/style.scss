@@ -78,20 +78,24 @@ header {
 }
 
 .menu-pop-out {
+    // adjusting display/alignment
     display: flex;
     flex-direction: column;
     gap: 1.1em;
     align-items: start;
-
     padding: 80px 0 0 30px;
-    position: absolute;
+
     background-color: black;
     color: white;
+
+    // positioning
+    position: absolute;
     top: 0;
     left: 0;
     right: 50%;
     bottom: 0;
 
+    // movement properties
     transform: translate3d(-100vw, 0, 0);
     transition: transform .3s cubic-bezier(0, .52, 0, 1);
 }

@@ -5,6 +5,20 @@
       display: flex;
     }
 
+    .menu-pop-out {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      align-items: center;
+      background-color: none;
+
+      transform: translate3d(0, 0, 0);
+    }
+
+    .special-mobile {
+      display: none;
+    }
+
     .mobile.right {
       display: inline-block;
     }

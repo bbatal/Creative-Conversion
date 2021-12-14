@@ -10,10 +10,17 @@ hamburger.addEventListener('click', () => {
     // we want to trigger the menu to display: block
     const menu = document.querySelector('ul.mobile');
     const specialLis = document.querySelectorAll('ul.mobile li.special-mobile');
-    menu.classList.toggle('clicked');
-    hamburger.classList.toggle('hamburger-transformed');
+
     // specialLis.classList.remove('special-mobile');
     specialLis.forEach((item) => {
         item.classList.remove('special-mobile');
     });
+
+    // we want to create a function that handles the toggling of classes
+    toggleClass(menu, 'clicked');
+    toggleClass(hamburger, 'hamburger-transformed');
 })
+
+function toggleClass(node, styleClass) {
+    node.classList.toggle(styleClass);
+}
