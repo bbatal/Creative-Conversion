@@ -10,7 +10,8 @@ hamburger.addEventListener('click', () => {
     // we want to trigger the menu to display: block
     const menu = document.querySelector('ul.mobile');
     const specialLis = document.querySelectorAll('ul.mobile li.special-mobile');
-    menu.classList.toggle('menu-pop-out');
+    menu.classList.toggle('clicked');
+    hamburger.classList.toggle('hamburger-transformed');
     // specialLis.classList.remove('special-mobile');
     specialLis.forEach((item) => {
         item.classList.remove('special-mobile');
