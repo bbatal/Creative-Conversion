@@ -72,8 +72,25 @@ header {
     gap: 2px;
 }
 
-.mobile {
+.mobile,
+.special-mobile {
     display: none;
+}
+
+.menu-pop-out {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+    align-items: start;
+
+    padding: 80px 0 0 40px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
 }
 
 .header-nav .hamburger {
