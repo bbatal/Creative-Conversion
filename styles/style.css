@@ -1462,9 +1462,12 @@ footer .button-input-styling {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: none;
+    background: none;
+    color: #333333;
+    gap: 2px;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+    padding: 0;
   }
   header .header-nav .special-mobile {
     display: none;
