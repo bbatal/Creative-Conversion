@@ -12,18 +12,43 @@ creativeApp.toggleClass = (node, styleClass) => {
     node.classList.toggle(styleClass);
 }
 
+// Will make an overlay function to toggle whether the overlay is on or not
+creativeApp.toggleOverlay = (boolean) => {
+    // div for setting background to dim
+    const overlay = document.createElement('div');
+    overlay.classList.add('opaque');
+
+    if (boolean) {
+        creativeApp.html.appendChild(overlay);
+    } else {        
+        const someDiv = document.querySelector('div.opaque');
+        creativeApp.html.removeChild(someDiv);
+    }
+}
+
+// function will handle checking if click is happening on the menu and will terminate, otherwise it will toggle the clicked class on the ul to remove it
 creativeApp.closeMenu = (event) => {
+    // some variables
+    const menu = document.querySelector('ul.mobile');
     // get the event path
     const path = event.composedPath();
     // check if it has the menu element
     if (path.some(elem => elem.id === 'myMenuId')) {
+        const someDiv = document.querySelector('div.opaque');
         // terminate this function if it does
-        return
+        if (creativeApp.html.contains(someDiv)) {
+            return;
+        } else {
+            creativeApp.toggleOverlay(true);
+            return;
+        };
     }
-    const menu = document.querySelector('ul.mobile');
+    // checks if the html has an overlay, if not then run the code
     menu.classList.remove('clicked');
     creativeApp.toggleClass(creativeApp.hamburger, 'hamburger-transformed');
     creativeApp.html.removeEventListener('click', creativeApp.closeMenu);
+    creativeApp.toggleOverlay(false);
+
 }
 
 // next lets add a click event to the hamburger
@@ -48,6 +73,7 @@ creativeApp.hamburger.addEventListener('click', () => {
         creativeApp.html.addEventListener('click', creativeApp.closeMenu);
     } else {
         creativeApp.html.removeEventListener('click', creativeApp.closeMenu);
+        creativeApp.toggleOverlay(false);
     }
 });
 };
