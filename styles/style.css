@@ -962,13 +962,13 @@ header .fa-shopping-bag::after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  padding: 100px 0 0 30px;
+  padding: 100px 0 0 6%;
   background-color: black;
   color: white;
   position: absolute;
   top: 0;
   left: 0;
-  right: 50%;
+  right: 35%;
   bottom: 0;
   z-index: 15;
   -webkit-transform: translate3d(-100vw, 0, 0);

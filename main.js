@@ -33,7 +33,7 @@ creativeApp.closeMenu = (event) => {
     // get the event path
     const path = event.composedPath();
     // check if it has the menu element
-    if (path.some(elem => elem.id === 'myMenuId')) {
+    if (path.some(elem => elem.id === 'myMenuId' || elem.id === 'myListId')) {
         const someDiv = document.querySelector('div.opaque');
         // terminate this function if it does
         if (creativeApp.html.contains(someDiv)) {
@@ -53,29 +53,31 @@ creativeApp.closeMenu = (event) => {
 
 // next lets add a click event to the hamburger
 creativeApp.eventHandler = () => {
-creativeApp.hamburger.addEventListener('click', () => {
-    // we want to trigger the menu to display: block
-    const menu = document.querySelector('ul.mobile');
-    const specialLis = document.querySelectorAll('ul.mobile li.special-mobile');
+    creativeApp.hamburger.addEventListener('click', () => {
+        // we want to trigger the menu to display: block
+        // there is a slight quirk here where if you manually stretch the screen while the menu is open then some things will remain on the screen such as the overlay, and some li's
+        const menu = document.querySelector('ul.mobile');
+        const specialLis = document.querySelectorAll('ul.mobile li.dissapearing');
 
-    // specialLis.classList.remove('special-mobile');
-    specialLis.forEach((item) => {
-        item.classList.remove('special-mobile');
+        // removes display: none to bring back 2 of the li items/ opposite happens when the menu is closed
+        specialLis[0].classList.remove('special-mobile');
+        specialLis[1].classList.remove('special-mobile');
+
+        // we want to create a function that handles the toggling of classes
+        creativeApp.toggleClass(menu, 'clicked');
+        creativeApp.toggleClass(creativeApp.hamburger, 'hamburger-transformed');
+
+        // if a user clicks outside of menu and the menu is open then attach an event listener to the html document in order to close it, otherwise remove the event listener
+        // solution provided by Anthony Oyathelemhi link:https://medium.com/@frontendtony/how-to-close-a-navigation-menu-when-the-page-is-clicked-3c607065a379
+        if(menu.classList[3]) {
+            creativeApp.html.addEventListener('click', creativeApp.closeMenu);
+        } else {
+            creativeApp.html.removeEventListener('click', creativeApp.closeMenu);
+            creativeApp.toggleOverlay(false);
+            specialLis[0].classList.add('special-mobile');
+            specialLis[1].classList.add('special-mobile');
+        }
     });
-
-    // we want to create a function that handles the toggling of classes
-    creativeApp.toggleClass(menu, 'clicked');
-    creativeApp.toggleClass(creativeApp.hamburger, 'hamburger-transformed');
-
-    // if a user clicks outside of menu and the menu is open then attach an event listener to the html document in order to close it, otherwise remove the event listener
-    // solution provided by Anthony Oyathelemhi link:https://medium.com/@frontendtony/how-to-close-a-navigation-menu-when-the-page-is-clicked-3c607065a379
-    if(menu.classList[3]) {
-        creativeApp.html.addEventListener('click', creativeApp.closeMenu);
-    } else {
-        creativeApp.html.removeEventListener('click', creativeApp.closeMenu);
-        creativeApp.toggleOverlay(false);
-    }
-});
 };
 
 // create init function
@@ -85,3 +87,6 @@ creativeApp.init = () => {
 
 // run init
 creativeApp.init();
+
+
+// Works well, in the future maybe add a fixed menu so it scrolls with the page, or prevent the page from scrolling when the menu is open.
