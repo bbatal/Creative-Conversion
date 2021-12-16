@@ -54,6 +54,7 @@ creativeApp.closeMenu = (event) => {
     menu.classList.remove('clicked');
     creativeApp.toggleClass(creativeApp.hamburger, 'hamburger-transformed');
     creativeApp.html.removeEventListener('click', creativeApp.closeMenu);
+    window.removeEventListener('scroll', creativeApp.noScroll);
     creativeApp.toggleOverlay(false);
 
 }
