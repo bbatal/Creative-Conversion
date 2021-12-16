@@ -12,6 +12,13 @@ creativeApp.toggleClass = (node, styleClass) => {
     node.classList.toggle(styleClass);
 }
 
+// Function to ask the window to stay put
+// thanks to David Wells for this code snippet
+// https://davidwells.io/snippets/disable-scrolling-with-javascript
+creativeApp.noScroll = () => {
+    window.scrollTo(0,0);
+}
+
 // Will make an overlay function to toggle whether the overlay is on or not
 creativeApp.toggleOverlay = (boolean) => {
     // div for setting background to dim
@@ -71,11 +78,13 @@ creativeApp.eventHandler = () => {
         // solution provided by Anthony Oyathelemhi link:https://medium.com/@frontendtony/how-to-close-a-navigation-menu-when-the-page-is-clicked-3c607065a379
         if(menu.classList[3]) {
             creativeApp.html.addEventListener('click', creativeApp.closeMenu);
+            window.addEventListener('scroll', creativeApp.noScroll);
         } else {
             creativeApp.html.removeEventListener('click', creativeApp.closeMenu);
             creativeApp.toggleOverlay(false);
             specialLis[0].classList.add('special-mobile');
             specialLis[1].classList.add('special-mobile');
+            window.removeEventListener('scroll', creativeApp.noScroll);
         }
     });
 };
