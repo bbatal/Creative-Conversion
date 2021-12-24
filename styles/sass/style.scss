@@ -72,9 +72,8 @@ header {
     gap: 2px;
 }
 
-.mobile {
-    display: none;
-}
+// styling for the responsive hamburger menu
+@import "pop-out-menu-styles";
 
 .header-nav .hamburger {
     background-color: transparent;

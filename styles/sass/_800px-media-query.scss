@@ -5,6 +5,23 @@
       display: flex;
     }
 
+    .menu-pop-out {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      align-items: center;
+      background: none;
+      color: $black;
+      gap: 2px;
+
+      transform: translate3d(0, 0, 0);
+      padding: 0;
+    }
+
+    .special-mobile {
+      display: none;
+    }
+
     .mobile.right {
       display: inline-block;
     }
