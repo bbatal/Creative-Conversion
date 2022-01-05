@@ -1278,7 +1278,6 @@ header .fa-shopping-bag::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -1797,10 +1796,7 @@ header .header-nav .mobile i {
   }
 
   .products {
-    max-width: 1400px;
     margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
