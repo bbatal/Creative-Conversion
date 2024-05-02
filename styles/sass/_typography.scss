@@ -19,20 +19,22 @@ body {
 
 p {
     text-transform: none;
+    color: $black;
 }
 
 h1 {
-    @include myFont($secondaryFont, 1.85rem, bold, 0.9px, inherit, inherit);
+    @include myFont($secondaryFont, 1.85rem, bold, 0.9px, inherit, $black);
 }
 
 h2, 
 h3, 
 h4 {
-    @include myFont($secondaryFont, 0.9rem, normal, 1.8px, inherit, inherit);
+    @include myFont($secondaryFont, 0.9rem, normal, 1.8px, inherit, $black);
 }
 
 .nav-links a {
     font-family: $secondaryFont;
+    color: $black;
 }
 
 footer {

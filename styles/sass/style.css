@@ -244,6 +244,7 @@ body {
 
 p {
   text-transform: none;
+  color: #333333;
 }
 
 h1 {
@@ -252,7 +253,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.9px;
   line-height: inherit;
-  color: inherit;
+  color: #333333;
 }
 
 h2,
@@ -263,11 +264,12 @@ h4 {
   font-weight: normal;
   letter-spacing: 1.8px;
   line-height: inherit;
-  color: inherit;
+  color: #333333;
 }
 
 .nav-links a {
   font-family: "Montserrat", sans-serif;
+  color: #333333;
 }
 
 footer {
@@ -396,7 +398,7 @@ footer a:hover {
 }
 
 .blog-header {
-  background-image: url("../../assets/blog-1.jpeg");
+  background-image: url("../assets/blog-1.jpeg");
   background-size: cover;
   background-position: 2% 50%;
   min-height: 85vh;
@@ -772,7 +774,7 @@ footer a:hover {
 /* Header Styles */
 .home-header {
   min-height: 85vh;
-  background-image: url("../assets/home-1.jpeg");
+  background-image: url("../../assets/home-1.jpeg");
   background-size: cover;
   background-position: 51% 50%;
   padding: 20px 0;
@@ -967,7 +969,7 @@ header .fa-shopping-bag::after {
   padding: 2em 0 0 0;
   max-width: 720px;
   margin: 0 auto;
-  color: #a4a4a4;
+  color: #333333;
 }
 
 .dots-menu {
@@ -1034,7 +1036,7 @@ header .fa-shopping-bag::after {
   padding: 0 0 0 0;
   font-size: 0.6rem;
   letter-spacing: 0;
-  color: #a4a4a4;
+  color: #333333;
 }
 
 /* .team section begins */
@@ -1210,6 +1212,9 @@ footer .button-input-styling {
   padding: 4em 0;
   letter-spacing: 5px;
   font-family: "Montserrat", sans-serif;
+}
+.banner p {
+  color: #F6F6F6;
 }
 
 /* welcome to media query land */
